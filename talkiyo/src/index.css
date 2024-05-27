@@ -1,0 +1,17 @@
+:root {
+  width: 100vw;
+  overflow-y: hidden;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+*::-webkit-scrollbar {
+  display: none; /* Hide scrollbar */
+}
