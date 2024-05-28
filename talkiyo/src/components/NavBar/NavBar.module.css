@@ -5,7 +5,11 @@
     flex-direction: row;
     padding: 30px;
     justify-content: space-between;
-    background-color: #8a2be2;
+     background: linear-gradient(
+    90deg,
+    rgba(70, 40, 186, 1) 32%,
+    rgba(8, 113, 255, 1) 100%
+  );
 }
 
 .Logo {
