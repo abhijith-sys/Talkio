@@ -1,0 +1,45 @@
+.navBar {
+    height: 50px;
+    display: flex;
+    position: sticky;
+    flex-direction: row;
+    padding: 30px;
+    justify-content: space-between;
+    background-color: #8a2be2;
+}
+
+.Logo {
+    color: white;
+    font-family: "Dancing Script", cursive;
+}
+
+.heading {
+    color: white;
+    cursor: pointer;
+    font-family: "Edu TAS Beginner", cursive;
+}
+
+.navigations {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    cursor: pointer;
+   
+}
+
+.downldBtn {
+    background-color: aliceblue;
+    color: #8a2be2;
+    width: 200px;
+    border-radius: 20px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dwnldlink {
+    text-decoration: none;
+}

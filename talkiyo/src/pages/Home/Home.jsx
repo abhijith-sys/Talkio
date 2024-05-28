@@ -1,23 +1,12 @@
 import React from 'react'
 import styles from "./Home.module.css";
 import images from "../../assets/home.svg"
+import { Link } from 'react-router-dom';
+import NavBar from '../../components/NavBar/NavBar';
 const Home = () => {
     return (
         <div className={styles.container}>
-            <div className={styles.navBar}>
-                <h1 className={styles.Logo} >Talkiyo</h1>
-
-                <div className={styles.navigations}>
-                    <h4 className={styles.heading} >HOME</h4>
-                    <h4 className={styles.heading} >ABOUT US</h4>
-                    <h4 className={styles.heading}>CONTACT</h4>
-                    <h4 className={styles.heading}>PRIVACY POLICY</h4>
-                    <h4 className={styles.heading}>TERMS & CONDITION</h4>
-                    <a className={styles.dwnldlink} href="https://expo.dev/artifacts/eas/gXKkFSsQuZEcyQni3Ya2R3.apk"><div className={styles.downldBtn}> Download App</div></a>
-                </div>
-
-
-            </div>
+            <NavBar />
             <div className={styles.content}>
                 <div className={styles.contentLeft}>
                     <span className={styles.contentheading}>Talkiyo LLP</span>
