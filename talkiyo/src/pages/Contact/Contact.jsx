@@ -18,7 +18,7 @@ const Contact = () => {
                 </p>
 
                 <h2 className={styles.textColor}>Make a Call</h2>
-                <p className={styles.textColor}>  <SocialIcon network="whatsapp"  url="https://wa.me/7306816967"/>  +91- 7306816967</p>
+                <p className={styles.textColor}>  <SocialIcon network="whatsapp"  url="https://wa.me/+917306816967"/>  +91- 7306816967</p>
 
                 <h2 className={styles.textColor}>Send a Mail</h2>
                 <p>

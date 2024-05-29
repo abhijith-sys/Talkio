@@ -26,7 +26,7 @@ const Footer = () => {
                     <span>2D FLOOR KC ARCADE ,NEAR TV CENTER,CSEZ P.O,KAKKANAD,ENAKULAM-682037
                     </span><br />
                     <span>EMIAL</span><br />
-                   <a href="mailto:Talkiyoapp@gmail.com"> <span className={styles.textColor}>Talkiyoapp@gmail.com</span></a><br />
+                   <a href="mailto:Talkiyoapp@gmail.com"> <span className={styles.textColor}>talkiyoapp@gmail.com</span></a><br />
                     <span>CONTACT</span><br />
                     <span>+91- 7306816967</span><br />
                 </div>
