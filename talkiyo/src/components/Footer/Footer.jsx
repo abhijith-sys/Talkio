@@ -23,12 +23,12 @@ const Footer = () => {
                 <div className={styles.aboutLink}>
                     <h4>CONTACT US</h4><br />
                     <h5>ADDRESS</h5><br />
-                    <span>ZILJ TECH PRIVATE LIMITED, Building No. 24/1701, Suite No.202 Heiley Spaces, 2nd Floor KC Arcade, Near Tv Centre, Csez P.O , Kakkanad, Ernakulam, Kerala, India, 682037
+                    <span>2D FLOOR KC ARCADE ,NEAR TV CENTER,CSEZ P.O,KAKKANAD,ENAKULAM-682037
                     </span><br />
                     <span>EMIAL</span><br />
-                    <span>Talkiyoapp@gmail.com</span><br />
+                   <a href="mailto:Talkiyoapp@gmail.com"> <span className={styles.textColor}>Talkiyoapp@gmail.com</span></a><br />
                     <span>CONTACT</span><br />
-                    <span>+91-871-482-8085</span><br />
+                    <span>+91- 7306816967</span><br />
                 </div>
             </div>
             {/* <hr></hr> */}

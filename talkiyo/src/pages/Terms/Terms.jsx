@@ -24,7 +24,7 @@ const Terms = () => {
                 <p>Talkio reserves the right to modify or update these terms and conditions at any time without prior notice. Users are encouraged to review the terms periodically for changes.</p>
                 <p>By continuing to use the Talkio app after any modifications to these terms, you agree to be bound by the revised terms and conditions.</p>
                 <h3>7. Contact Us</h3>
-                <p>If you have any questions or concerns about these terms and conditions, please contact us at support@talkio.com.</p>
+                <p>If you have any questions or concerns about these terms and conditions, please contact us at helptalkiyo@gmail.com.</p>
             </div>
             <Footer/>
         </div>

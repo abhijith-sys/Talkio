@@ -9,8 +9,8 @@ const Privacy = () => {
             <NavBar />
             <div className={styles.content}>
                 <h1>Privacy Policy</h1>
-                <p>We, Talkiyo, are an internet-based mobile phone application by M/s Talkiyo Tech Private Limited, and this document uses the words “we” and Talkiyo interchangeably, and “you” and “users” interchangeably. The expression “we” covers both Talkiyo and M/s Talkiyo Tech Private Limited, as and when the context allows.</p>
-                <p>Terms “We”, “Talkiyo”, “M/s Talkiyo Tech Private Limited”, covers their respective current or former employees, officers, directors, agents, successors, assigns, parents, subsidiaries, divisions, or affiliated corporations.</p>
+                <p>We, Talkiyo, are an internet-based mobile phone application by M/s Talkiyo LLP, and this document uses the words “we” and Talkiyo interchangeably, and “you” and “users” interchangeably. The expression “we” covers both Talkiyo and M/s Talkiyo LLP, as and when the context allows.</p>
+                <p>Terms “We”, “Talkiyo”, “M/s Talkiyo LLP”, covers their respective current or former employees, officers, directors, agents, successors, assigns, parents, subsidiaries, divisions, or affiliated corporations.</p>
                 <p>The users’ right to privacy is of paramount importance to the Talkiyo community.</p>
                 <p>We take data security and privacy with critical importance. We obligate ourselves to maintain a no-leak and no-disclosure business as any private and sensitive data must receive proportioned protection. In our application, users and providers, or ‘listeners’, are in control and can decide what they want to share and what they prefer to keep private.</p>
                 <ul>
@@ -66,7 +66,7 @@ const Privacy = () => {
                 <p>With regard to parties based out of India, as we are an Indian party, registered in India, with primary place of business based out of India, it would be assumed that the subject matter of any dispute arose in India and shall be subject to the substantial law of India. This Policy, should you choose to proceed to use any of our services, bind you legally, and this document expressly bars the jurisdiction of any other court or forum not based out of New Delhi, India.</p>
                 <h2>Contact Us</h2>
                 <p>Don't hesitate to contact us if you have any questions.</p>
-                <p>By email: <a href="mailto:talkiyo@gmail.com">talkiyo@gmail.com</a></p>
+                <p>By email: <a href="mailto:Talkiyoapp@gmail.com">Talkiyoapp@gmail.com</a></p>
             </div>
             <Footer/>
         </div>
