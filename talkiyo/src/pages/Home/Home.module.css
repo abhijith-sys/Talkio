@@ -1,14 +1,13 @@
 .container {
-    width: 100vw;
-    height: 100vh; 
-     background: linear-gradient(
-        90deg,
-        rgba(70, 40, 186, 1) 32%,
-        rgba(8, 113, 255, 1) 100%
-      );
+    height: 100vh;
+    background: linear-gradient(90deg,
+            rgba(70, 40, 186, 1) 32%,
+            rgba(8, 113, 255, 1) 100%);
     display: flex;
     flex-direction: column;
     overflow: auto;
+    justify-content: space-between;
+    gap: 20px;
 }
 
 .navBar {
@@ -43,25 +42,25 @@
 }
 
 .content {
-    width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-  
+
+
 }
 
 .contentLeft {
     width: 35%;
     padding: 30px;
     color: aliceblue;
-  
+
 
 }
 
 .contenSection {
     color: aliceblue;
-    font-size: 20px;  
+    font-size: 18px;
     font-weight: 500;
     width: 200px;
     /* font-family: "Edu TAS Beginner", cursive; */
@@ -69,22 +68,23 @@
 }
 
 .contentheading {
-    font-size: 30px;
+    font-size: 22px;
     padding-bottom: 50px;
+    font-weight: 600;
     /* font-family: "Edu TAS Beginner", cursive; */
     font-family: "Quicksand", sans-serif;
 }
 
 .contentRight {
     width: 50%;
-   
+
 }
 
-.contetnImage{
+.contetnImage {
     width: 600px;
 }
 
-.downldBtn{
+.downldBtn {
     background-color: aliceblue;
     color: #8a2be2;
     width: 200px;
@@ -95,6 +95,60 @@
     align-items: center;
 }
 
-.dwnldlink{
+.dwnldlink {
     text-decoration: none;
+}
+
+.contentHeding {
+    font-size: 30px;
+    color: white;
+}
+
+.contentprise{
+
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    text-align: center;
+    padding: 40px;
+
+}
+
+.priceCard{
+    width: 300px;
+    height: 220px;
+    border-radius: 20px;
+    background-color: #8a2be2;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+    padding-top: 50px;
+}
+
+.contentPriseList{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
+    padding: 30px;
+}
+
+.pricename{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.price{
+    font-size: 40px;
+    font-weight: 600;  
+}
+
+.time{
+    font-size: 20px;
+    font-weight: 400;
 }
