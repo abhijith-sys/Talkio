@@ -12,7 +12,7 @@ const NavBar = () => {
                 <Link to={`/contact`}> <h4 className={styles.heading}>CONTACT</h4></Link>
                 <Link to={`/privacy`}><h4 className={styles.heading}>PRIVACY POLICY</h4></Link>
                 <Link to={`/terms`}><h4 className={styles.heading}>TERMS & CONDITION</h4></Link>
-                <a className={styles.dwnldlink} href="https://expo.dev/artifacts/eas/gXKkFSsQuZEcyQni3Ya2R3.apk"><div className={styles.downldBtn}> Download App</div></a>
+                <a className={styles.dwnldlink} href="https://expo.dev/artifacts/eas/uwocpALAdAxBS9hzcejjZo.apk"><div className={styles.downldBtn}> Download App</div></a>
             </div>
         </div>
     )

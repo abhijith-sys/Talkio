@@ -14,18 +14,9 @@ const Home = () => {
                     <br />
                     <br />
                     <span className={styles.contenSection}>
-                        Our mission is to create meaningful connections and reduce social isolation by providing a platform where anyone can monetize their time and listening skills. We believe in the transformative power of conversation and the significant impact of having someone to talk to, whether it’s to share happiness or seek solace during challenging times.
-                    </span>
-                    <br />
-                    <br />
-                    <span className={styles.contenSection}>
-                        Talkiyo LLP was born from the realization that in today's fast-paced, digitally-driven world, many individuals experience loneliness and isolation. At the same time, there are countless people with the willingness and time to offer a listening ear but no platform to facilitate this exchange. Talkiyo bridges this gap by creating a marketplace where people can buy and sell time, fostering genuine human connections.
-                    </span>
-                    <br />
-                    <br />
-                    <span className={styles.contenSection}>
-                        The inspiration behind Talkiyo came from the growing need for accessible, empathetic listeners who can provide support without the barriers of formal therapy or counseling. We envisioned a platform where anyone, regardless of their background, can find someone to talk to or offer their listening skills, making emotional support both affordable and flexible.
-                    </span>
+                    Our mission is to reduce social isolation by providing a platform where users can connect with professionals for various services. Users can log in as either a professional offering their time and expertise or as someone seeking services. The platform facilitates these interactions at rates set by the professionals, allowing for valuable and supportive conversations, whether it’s to share achievements or seek support during challenging times.                    </span>
+                    
+                
                     <br />
                     <br />
                     <span className={styles.contenSection}>
