@@ -50,7 +50,7 @@ const Home = () => {
 
                         <hr>
                         </hr>
-                        <span className={styles.time}>15 Mintes Talk Time</span>
+                        {/* <span className={styles.time}>15 Mintes Talk Time</span> */}
 
                     </div>
                     <div className={styles.priceCard}>
@@ -60,46 +60,46 @@ const Home = () => {
 
                         <hr>
                         </hr>
-                        <span className={styles.time}>30 Mintes Talk Time</span>
+                        {/* <span className={styles.time}>30 Mintes Talk Time</span> */}
 
                     </div>
                     <div className={styles.priceCard}>
                         <span className={styles.pricename}>PREMIUM PLAN</span>
-                        <span className={styles.price}>₹399.00</span>
+                        <span className={styles.price}>₹499.00</span>
 
                         <hr>
                         </hr>
-                        <span className={styles.time}>1 Hours Talk Time</span>
+                        {/* <span className={styles.time}>1 Hours Talk Time</span> */}
 
                     </div>
                     <div className={styles.priceCard}>
                         <span className={styles.pricename}>PRO PLAN
                         </span>
-                        <span className={styles.price}>₹599.00</span>
-
-                        <hr>
-                        </hr>
-                        <span className={styles.time}>1 Hours 30 Mintes Talk Time</span>
-
-                    </div>
-                    <div className={styles.priceCard}>
-                        <span className={styles.pricename}>ADVANCED PLAN</span>
-                        <span className={styles.price}>₹799.00</span>
-
-                        <hr>
-                        </hr>
-                        <span className={styles.time}>2 Hours Talk Time
-                        </span>
-
-                    </div>
-                    <div className={styles.priceCard}>
-                        <span className={styles.pricename}>EXCLUSIVE PLAN</span>
                         <span className={styles.price}>₹999.00</span>
 
                         <hr>
                         </hr>
-                        <span className={styles.time}>2 Hours 30 Mintes Talk Time
-                        </span>
+                        {/* <span className={styles.time}>1 Hours 30 Mintes Talk Time</span> */}
+
+                    </div>
+                    <div className={styles.priceCard}>
+                        <span className={styles.pricename}>ADVANCED PLAN</span>
+                        <span className={styles.price}>₹1999.00</span>
+
+                        <hr>
+                        </hr>
+                        {/* <span className={styles.time}>2 Hours Talk Time
+                        </span> */}
+
+                    </div>
+                    <div className={styles.priceCard}>
+                        <span className={styles.pricename}>EXCLUSIVE PLAN</span>
+                        <span className={styles.price}>₹4999.00</span>
+
+                        <hr>
+                        </hr>
+                        {/* <span className={styles.time}>2 Hours 30 Mintes Talk Time
+                        </span> */}
 
                     </div>
 
