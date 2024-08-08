@@ -94,7 +94,7 @@ const Home = () => {
                     </div>
                     <div className={styles.priceCard}>
                         <span className={styles.pricename}>EXCLUSIVE PLAN</span>
-                        <span className={styles.price}>₹4999.00</span>
+                        <span className={styles.price}>₹2499.00</span>
 
                         <hr>
                         </hr>

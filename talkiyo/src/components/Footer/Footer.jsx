@@ -25,10 +25,10 @@ const Footer = () => {
                     <h5>ADDRESS</h5><br />
                     <span>2D FLOOR KC ARCADE ,NEAR TV CENTER,CSEZ P.O,KAKKANAD,ENAKULAM-682037
                     </span><br />
-                    <span>EMIAL</span><br />
-                   <a href="mailto:Talkiyoapp@gmail.com"> <span className={styles.textColor}>talkiyoapp@gmail.com</span></a><br />
+                    <span>EMAIL</span><br />
+                   <a href="mailto:helptalkiyo@gmail.com"> <span className={styles.textColor}>helptalkiyo@gmail.com</span></a><br />
                     <span>CONTACT</span><br />
-                    <span>+91- 7306816967</span><br />
+                    <span>+91- 8848540021</span><br />
                 </div>
             </div>
             {/* <hr></hr> */}
