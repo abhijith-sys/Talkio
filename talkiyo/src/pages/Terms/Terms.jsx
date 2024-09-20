@@ -605,7 +605,7 @@ const Terms = () => {
                         your account and such action will result in the automatic deletion of all
                         User Content associated with&nbsp;
                     </span>
-                    <span style={{ color: "rgb(255, 0, 0)" }}>
+                    <span >
                         it except the information that are to be kept with the Company for the
                         necessary legal complances.
                     </span>
