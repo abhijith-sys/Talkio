@@ -1,5 +1,5 @@
 .navBar {
-    height: 50px;
+    /* min-height: 50px; */
     display: flex;
     position: sticky;
     flex-direction: row;
@@ -10,6 +10,7 @@
     rgba(70, 40, 186, 1) 32%,
     rgba(8, 113, 255, 1) 100%
   );
+  flex-wrap: wrap;
 }
 
 .Logo {
@@ -30,6 +31,7 @@
     justify-content: center;
     gap: 50px;
     cursor: pointer;
+    flex-wrap: wrap;
    
 }
 
