@@ -5,7 +5,7 @@ import styles from "./NavBar.module.css"
 const NavBar = () => {
     return (
         <div className={styles.navBar}>
-            <h1 className={styles.Logo} >Talkiyo</h1>
+           <Link to={`/`}><h1 className={styles.Logo} >Talkiyo</h1></Link>  
             <div className={styles.navigations}>
                 <Link to={`/`}> <h4 className={styles.heading} >HOME</h4></Link>
                 <Link to={`/about`}> <h4 className={styles.heading} >ABOUT US</h4></Link>
