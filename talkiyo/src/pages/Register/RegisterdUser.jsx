@@ -46,9 +46,9 @@ const RegisterdUser = () => {
     const verifyOtp = async () => {
         setLoading(true); // Start loading
         try {
-            const data = { otp: otp, phoneNumber: "+91" + mobileNumber, planId: id };
+            const data = { otp: "", phoneNumber: "+91" + mobileNumber, planId: id,userId:UserId };
             const response = await verifyOtpAndPhone(data);
-            window.location.href = response.data.data.instrumentResponse.redirectInfo.url;
+            window.location.href = response?.data?.data?.instrumentResponse?.redirectInfo.url;
         } catch (error) {
             console.log(error);
         }

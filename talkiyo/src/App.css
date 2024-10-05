@@ -11,6 +11,14 @@
 ._failed i {
   color: red !important;
 }
+._pending{
+  color: rgb(110, 70, 219) !important;
+}
+
+._pending{
+  border-bottom: solid 4px rgb(110, 70, 219) !important;
+}
+
 
 ._success {
   box-shadow: 0 15px 25px #00000019;

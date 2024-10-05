@@ -86,7 +86,7 @@ const PaymentPage = () => {
                 const response = await getOtp(data);
                 console.log(response);
                 localStorage.setItem("phone", mobileNumber);
-                localStorage.setItem("Uid", response?.uid)
+                localStorage.setItem("Uid", response?.userId);
 
                 setOtpSent(true); // Show the OTP input field
                 setOtpError('');

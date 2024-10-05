@@ -11,6 +11,7 @@ import Plans from './pages/Plans/Plans';
 import FailurePage from './components/common/FailurePage';
 import SuccessPage from './components/common/SuccessPage';
 import RegisterdUser from './pages/Register/RegisterdUser';
+import PendingPage from './components/common/PendingPage';
 function App() {
 
 
@@ -30,7 +31,7 @@ function App() {
         <Route path="/payment" element={<PaymentPage />} />
         <Route path="/success" element={<SuccessPage />} />
         <Route path="/failure" element={<FailurePage />} />
-
+        <Route path="/pending" element={<PendingPage />} />
       </Routes>
     </BrowserRouter>
   )
