@@ -10,7 +10,6 @@ const NavBar = () => {
                 <Link to={`/`}> <h4 className={styles.heading} >HOME</h4></Link>
                 <Link to={`/about`}> <h4 className={styles.heading} >ABOUT US</h4></Link>
                 <Link to={`/plans`}> <h4 className={styles.heading} >PLANS</h4></Link>
-
                 <Link to={`/contact`}> <h4 className={styles.heading}>CONTACT</h4></Link>
                 <Link to={`/privacy`}><h4 className={styles.heading}>PRIVACY POLICY</h4></Link>
                 <Link to={`/terms`}><h4 className={styles.heading}>TERMS & CONDITION</h4></Link>

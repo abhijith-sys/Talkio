@@ -69,66 +69,20 @@ const Home = () => {
 
                 <h3 className={styles.contentHeding}>Explore Our Packages and Pricing</h3>
                 <div className={styles.contentPriseList}>
-                    <div className={styles.priceCard}>
-                        <span className={styles.pricename}>BASIC PLAN</span>
-                        <span className={styles.price}>₹99.00</span>
+                {
+                    plans.map((data) => {
+                        return <div className={styles.priceCard} key={data.id}>
+                            <span className={styles.pricename}>{data.planName}</span>
+                            <span className={styles.price}>{data.amount}</span>
 
-                        <hr>
-                        </hr>
-                        {/* <span className={styles.time}>15 Mintes Talk Time</span> */}
-                        <div className={styles.paybtn} onClick={() => toPaymentPage("123")}>Pay Now</div>
+                            <hr>
+                            </hr>
+                            {/* <span className={styles.time}>15 Mintes Talk Time</span> */}
+                            <div className={styles.paybtn} onClick={() => toPaymentPage(data?.id)}>Pay Now</div>
 
-                    </div>
-                    <div className={styles.priceCard}>
-                        <span className={styles.pricename}>STANDARD PLAN
-                        </span>
-                        <span className={styles.price}>₹199.00</span>
-
-                        <hr>
-                        </hr>
-                        {/* <span className={styles.time}>30 Mintes Talk Time</span> */}
-
-                    </div>
-                    <div className={styles.priceCard}>
-                        <span className={styles.pricename}>PREMIUM PLAN</span>
-                        <span className={styles.price}>₹499.00</span>
-
-                        <hr>
-                        </hr>
-                        {/* <span className={styles.time}>1 Hours Talk Time</span> */}
-
-                    </div>
-                    <div className={styles.priceCard}>
-                        <span className={styles.pricename}>PRO PLAN
-                        </span>
-                        <span className={styles.price}>₹999.00</span>
-
-                        <hr>
-                        </hr>
-                        {/* <span className={styles.time}>1 Hours 30 Mintes Talk Time</span> */}
-
-                    </div>
-                    <div className={styles.priceCard}>
-                        <span className={styles.pricename}>ADVANCED PLAN</span>
-                        <span className={styles.price}>₹1999.00</span>
-
-                        <hr>
-                        </hr>
-                        {/* <span className={styles.time}>2 Hours Talk Time
-                        </span> */}
-
-                    </div>
-                    <div className={styles.priceCard}>
-                        <span className={styles.pricename}>EXCLUSIVE PLAN</span>
-                        <span className={styles.price}>₹2499.00</span>
-
-                        <hr>
-                        </hr>
-                        {/* <span className={styles.time}>2 Hours 30 Mintes Talk Time
-                        </span> */}
-
-                    </div>
-
+                        </div>
+                    })
+                }
                 </div>
 
             </div>
