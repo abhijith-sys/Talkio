@@ -10,6 +10,7 @@ import PaymentPage from './pages/paymentPage/PaymentPage';
 import Plans from './pages/Plans/Plans';
 import FailurePage from './components/common/FailurePage';
 import SuccessPage from './components/common/SuccessPage';
+import RegisterdUser from './pages/Register/RegisterdUser';
 function App() {
 
 
@@ -25,6 +26,7 @@ function App() {
         <Route path="/terms" element={<Terms />} />
         <Route path="/plans" element={<Plans />} />
         <Route path="/payment/:id" element={<PaymentPage/>} />
+        <Route path="/register_payment/:id" element={<RegisterdUser/>} />
         <Route path="/payment" element={<PaymentPage />} />
         <Route path="/success" element={<SuccessPage />} />
         <Route path="/failure" element={<FailurePage />} />

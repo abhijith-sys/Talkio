@@ -15,7 +15,13 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-
+    flex-wrap: wrap;
+    gap: 20px
+}
+@media (max-width:991px){
+    .footerTop {
+        justify-content: left;
+    }
 }
 
 .about {
@@ -25,34 +31,37 @@
     flex-direction: column;
     gap: 20px;
 }
-.aboutContent{
+
+.aboutContent {
     font-size: 14px;
     font-weight: 400;
 }
 
-.aboutLink{
+.aboutLink {
     min-width: 200px;
     display: flex;
-    flex-direction: column;  
+    flex-direction: column;
     padding: 10px;
 
 }
 
-.bottomFooter{
-display: flex;
-flex-direction: row;
-justify-content: space-between;
-padding: 20px;
-}
-
-
-.bottomFooterIcons{
+.bottomFooter {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    gap: 10px;  
+    padding: 20px;
+    flex-wrap: wrap;
+    gap:20px
 }
 
-.textColor{
+
+.bottomFooterIcons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.textColor {
     color: white !important;
 }

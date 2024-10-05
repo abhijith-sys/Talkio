@@ -16,12 +16,14 @@
 .Logo {
     color: white;
     font-family: "Dancing Script", cursive;
+    padding-bottom: 10px;
 }
 
 .heading {
     color: white;
     cursor: pointer;
     font-family: "Edu TAS Beginner", cursive;
+    width: 150px;
 }
 
 .navigations {
@@ -35,6 +37,11 @@
    
 }
 
+@media (max-width:991px){
+    .navigations {
+        justify-content: left;
+    }
+}
 .downldBtn {
     background-color: aliceblue;
     color: #8a2be2;

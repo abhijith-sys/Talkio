@@ -11,11 +11,39 @@ const Home = () => {
 
     const toPaymentPage = (id) => {
         try {
-            navigate(`/payment/${id}`);
+            // Get stored phone number and Uid
+            const phone = localStorage.getItem("phone");
+            const Uid = localStorage.getItem("Uid");
+    
+            // Function to validate phone number (example for 10-digit numbers)
+            const isValidPhoneNumber = (phone) => {
+                const phoneRegex = /^[0-9]{10}$/; // Regex for a valid 10-digit phone number
+                return phoneRegex.test(phone);
+            };
+    
+            // Function to validate Uid length
+            const isValidUid = (Uid) => {
+                return Uid && Uid.length >= 3; // Check if Uid is not null and has a length of at least 3
+            };
+    
+            // If phone or Uid is null or invalid
+            if (!phone || !isValidPhoneNumber(phone) || !isValidUid(Uid)) {
+                // Clear localStorage values
+                localStorage.removeItem("phone");
+                localStorage.removeItem("Uid");
+    
+                // Navigate to the payment page
+                navigate(`/payment/${id}`);
+            } else {
+                // If both phone and Uid are valid
+                navigate(`/register_payment/${id}`);
+                console.log("Both phone and Uid are valid.");
+            }
         } catch (error) {
-            console.log(error);
+            console.log("Error during navigation:", error);
         }
-    }
+    };
+    
 
     const getAllPlans = async () => {
         try {
