@@ -2,9 +2,9 @@
 
 import axios from 'axios';
 
-// const API_URL = "https://tiktik.ap-southeast-2.elasticbeanstalk.com/index";
-const API_URL = "https://api.talkiyo.xyz";
-
+const API_URL = "https://tiktik.ap-southeast-2.elasticbeanstalk.com/index";
+// const API_URL = "https://api.talkiyo.xyz";
+// 
 export const getOtp = async (data) => {
     try {
         const response = await axios.post(`${API_URL}/sendOtpWebsite`, data);
