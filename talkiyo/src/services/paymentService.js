@@ -15,7 +15,7 @@ export const getOtp = async (data) => {
     }
 };
 
-// export const verifyOtpAndPhone = async (data) => {
+export const verifyOtpAndPhone = async (data) => {
     try {
         const response = await axios.post(`${API_URL}/phonePayCreatePayment`, data);
         return response.data; // Return the data or handle it as needed
