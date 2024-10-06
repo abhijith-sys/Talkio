@@ -3,7 +3,7 @@
 import axios from 'axios';
 
 const API_URL = "https://tiktik.ap-southeast-2.elasticbeanstalk.com/index";
-// const API_URL = "https://api.talkiyo.xyz";
+const API_URL = "https://api.talkiyo.xyz";
 // 
 export const getOtp = async (data) => {
     try {
@@ -15,7 +15,7 @@ export const getOtp = async (data) => {
     }
 };
 
-export const verifyOtpAndPhone = async (data) => {
+// export const verifyOtpAndPhone = async (data) => {
     try {
         const response = await axios.post(`${API_URL}/phonePayCreatePayment`, data);
         return response.data; // Return the data or handle it as needed
