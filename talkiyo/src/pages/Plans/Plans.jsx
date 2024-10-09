@@ -70,7 +70,7 @@ const Plans = () => {
 
                             <hr>
                             </hr>
-                            {/* <span className={styles.time}>15 Mintes Talk Time</span> */}
+                            <span className={styles.time}>{data?.coins || 0} Minutes talk time</span>
                             <div className={styles.paybtn} onClick={() => toPaymentPage(data?.id)}>Pay Now</div>
 
                         </div>

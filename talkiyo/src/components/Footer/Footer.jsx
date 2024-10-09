@@ -8,9 +8,7 @@ const Footer = () => {
             <div className={styles.footerTop}>
                 <div className={styles.about}>
                     <h4>ABOUT</h4>
-                    <span className={styles.aboutContent}>Talkiyo aims to connect professionals from various fields, providing a platform where expertise meets opportunity. Our primary goal is to facilitate seamless connections between professionals and individuals seeking their services. Through the Talkiyo app, professionals can easily register and create profiles, making themselves accessible for networking, consultations, and collaborations.
-
-                        Whether you're looking to hire an expert, seek advice, or expand your professional network, Talkiyo offers a streamlined, user-friendly interface for chatting and connecting with industry leaders and specialists. Join Talkiyo today and unlock a world of professional opportunities.
+                    <span className={styles.aboutContent}>The Talkiyo LLP app is India’s foremost platform for emotional wellness and online counselling, offering an unmatched consultation experience designed to make your life easier. By providing seamless access to top-quality support, the app ensures that help is always available when you need it most, offering compassionate and professional guidance in a convenient and accessible way.
                     </span>
                 </div>
                 <div className={styles.aboutLink}>

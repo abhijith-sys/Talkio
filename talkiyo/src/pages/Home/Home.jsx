@@ -67,14 +67,14 @@ const Home = () => {
                     <br />
                     <br />
                     <span className={styles.contenSection}>
-                        Our mission is to reduce social isolation by providing a platform where users can connect with professionals for various services. Users can log in as either a professional offering their time and expertise or as someone seeking services. The platform facilitates these interactions at rates set by the professionals, allowing for valuable and supportive conversations, whether it’s to share achievements or seek support during challenging times.                    </span>
+                    The Talkiyo LLP app is India’s leading platform for emotional wellness and online counselling, designed to provide support when you need it most. In a world that has changed significantly since the COVID-19 pandemic, Talkiyo LLP makes it simple to seek help from the comfort of your home.                        
+                                          </span>
 
 
                     <br />
                     <br />
                     <span className={styles.contenSection}>
-                        Professionals can register on our platform, create profiles, and list their availability to connect with those seeking a listening ear. Whether you are a trained counselor, a seasoned professional, or someone with a compassionate heart, Talkiyo provides the tools you need to offer your time and expertise.
-                    </span>
+                    Whether you're dealing with depression, anxiety, relationship issues, or feelings of loneliness, the Talkiyo LLP app connects you with our counsellors through easy-to-access consultations. Sometimes, all it takes is a friendly ear and a shoulder to lean on to help you through tough times. Talkiyo LLP focuses on emotional wellness, offering you a safe space to talk openly about your struggles and receive the compassionate support you deserve—all available through our app for your convenience.                    </span>
                     <br />
                     <br />
                     <span className={styles.contenSection}>
@@ -100,12 +100,12 @@ const Home = () => {
                 {
                     plans.map((data) => {
                         return <div className={styles.priceCard} key={data.id}>
-                            <span className={styles.pricename}>{data.planName}</span>
-                            <span className={styles.price}>{data.amount}</span>
+                            <span className={styles.pricename}>{data?.planName}</span>
+                            <span className={styles.price}>{data?.amount}</span>
 
                             <hr>
                             </hr>
-                            {/* <span className={styles.time}>15 Mintes Talk Time</span> */}
+                            <span className={styles.time}>{data?.coins || 0} Minutes talk time</span>
                             <div className={styles.paybtn} onClick={() => toPaymentPage(data?.id)}>Pay Now</div>
 
                         </div>
