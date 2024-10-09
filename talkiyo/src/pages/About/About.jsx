@@ -19,39 +19,39 @@ const About = () => {
 
                 <h2 className={styles.textColor}>Features of Talkiyo</h2>
                 <ul>
-                    <li><strong>Emotional Wellness Support:</strong>:
+                    <li><strong>Emotional Wellness Support : </strong>
                         Provides access to experienced counsellors for emotional support and mental wellness.                     </li>
-                    <li><strong>SOnline Counselling</strong>:
+                    <li><strong>Online Counselling</strong> : 
                         List your services in a clear and detailed manner, specifying what you offer, your rates, and any packages available. This transparency helps clients find the perfect match for their requirements.</li>
                     <li><strong>Seamless Connection</strong>
-                        Enables seamless virtual consultations, allowing users to connect with professionals from the comfort of their homes.                    </li>
-                    <li><strong>Professional Listening Services</strong>
-                        :Offers compassionate, non-judgmental listeners who are ready to provide friendly advice and a shoulder to lean on                    </li>
-                   
-                        <li><strong>User-Friendly App Interface</strong>:
+                        : Enables seamless virtual consultations, allowing users to connect with professionals from the comfort of their homes.                    </li>
+                    <li><strong>Professional Listening Services </strong>
+                         : Offers compassionate, non-judgmental listeners who are ready to provide friendly advice and a shoulder to lean on                    </li>
+
+                    <li><strong>User-Friendly App Interface</strong> : 
                         Easy-to-navigate platform, allowing users to quickly browse, schedule, and connect with counsellors.
 
-                         </li>
-                         <li><strong>Flexible Scheduling</strong>:
-                         Allows users to book appointments with available professionals at their convenience.
+                    </li>
+                    <li><strong>Flexible Scheduling</strong> : 
+                        Allows users to book appointments with available professionals at their convenience.
 
-                         </li>
-                         <li><strong>Instant Connection</strong>:
-                         Eliminates the need for tokens or long waits, ensuring immediate access to support.
+                    </li>
+                    <li><strong>Instant Connection</strong> : 
+                        Eliminates the need for tokens or long waits, ensuring immediate access to support.
 
-                         </li>
-                         <li><strong>Wide Range of Professionals</strong>:
-                         Includes a variety of counsellors and compassionate listeners from different backgrounds, providing tailored advice for personal issues.
+                    </li>
+                    <li><strong>Wide Range of Professionals</strong>: 
+                        Includes a variety of counsellors and compassionate listeners from different backgrounds, providing tailored advice for personal issues.
 
-                         </li>
-                         <li><strong>Payment Integration</strong>:
-                         Secure and easy payment options for consultations, ensuring a smooth transaction process.
+                    </li>
+                    <li><strong>Payment Integration</strong>: 
+                        Secure and easy payment options for consultations, ensuring a smooth transaction process.
 
-                         </li>
-                         <li><strong>Emphasis on Mental Health</strong>:
-                         Focuses on reducing feelings of isolation, stress, anxiety, and loneliness by offering a supportive space for users to share their struggles   .
+                    </li>
+                    <li><strong>Emphasis on Mental Health</strong>: 
+                        Focuses on reducing feelings of isolation, stress, anxiety, and loneliness by offering a supportive space for users to share their struggles   .
 
-                         </li>
+                    </li>
                 </ul>
 
                 <h2 className={styles.textColor}>Why Choose Talkiyo?</h2>
