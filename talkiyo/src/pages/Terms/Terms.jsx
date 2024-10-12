@@ -742,7 +742,7 @@ const Terms = () => {
                             </span>
                         </p>
                     </li>
-                    <li>
+                    {/* <li>
                         <p
                             style={{
                                 textAlign: "justify",
@@ -757,7 +757,7 @@ const Terms = () => {
                                 any payment methods.
                             </span>
                         </p>
-                    </li>
+                    </li> */}
                 </ul>
                 <p
                     style={{
