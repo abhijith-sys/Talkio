@@ -121,7 +121,7 @@ const GuideLines = () => {
                                     <strong>Legal Compliance:</strong> Examples: Follow all applicable laws and regulations during calls.
                                 </li>
                                 <li>
-                                    <strong>Reporting Violations:</strong> Examples: Report any behavior that breaks these guidelines immediately on helpTalkiyo @gmail.com.
+                                    <strong>Reporting Violations:</strong> Examples: Report any behavior that breaks these guidelines immediately on helpTalkiyo@gmail.com .
                                 </li>
                             </ul>
                         </li>
@@ -260,7 +260,7 @@ const GuideLines = () => {
                         <li>Issue a warning</li>
                         <li>Ban the offending member from Talkiyo App</li>
                     </ul>
-                    <p className={`${styles.paragraph} ${styles.textColor}`}>When necessary, we also may cooperate with law enforcement to assist in potential criminal investigations related to member conduct. Your treatment towards others outside of the Talkiyo App can also result in action against your account. If we’re made aware of harm between members on dates, meetups with friends, via text message or direct messaging platforms, or relevant alleged criminal or harmful conduct committed in your past or outside of Talkiyo App, we may take action as if it happened on our platform. If you believe we’ve made a mistake in taking action on your account or content, you can always contact us here helpTalkiyo @gmail.com</p>
+                    <p className={`${styles.paragraph} ${styles.textColor}`}>When necessary, we also may cooperate with law enforcement to assist in potential criminal investigations related to member conduct. Your treatment towards others outside of the Talkiyo App can also result in action against your account. If we’re made aware of harm between members on dates, meetups with friends, via text message or direct messaging platforms, or relevant alleged criminal or harmful conduct committed in your past or outside of Talkiyo App, we may take action as if it happened on our platform. If you believe we’ve made a mistake in taking action on your account or content, you can always contact us here helpTalkiyo@gmail.com</p>
                 </div>
             </div>
             <Footer />
