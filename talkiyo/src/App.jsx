@@ -12,6 +12,7 @@ import FailurePage from './components/common/FailurePage';
 import SuccessPage from './components/common/SuccessPage';
 import RegisterdUser from './pages/Register/RegisterdUser';
 import PendingPage from './components/common/PendingPage';
+import GuideLines from './pages/GuideLines/GuideLines';
 function App() {
 
 
@@ -32,6 +33,7 @@ function App() {
         <Route path="/success" element={<SuccessPage />} />
         <Route path="/failure" element={<FailurePage />} />
         <Route path="/pending" element={<PendingPage />} />
+        <Route path="/guidelines" element={<GuideLines/>} />
       </Routes>
     </BrowserRouter>
   )

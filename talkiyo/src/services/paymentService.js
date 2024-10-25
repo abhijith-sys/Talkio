@@ -34,3 +34,12 @@ export const getPlans = async () => {
         throw error; // Optionally rethrow the error to handle it later
     }
 };
+
+export const getPglist = async () => {
+    try {
+        const response = await axios.get(`${API_URL}/getPaymentGatewayList`);
+        return response.data; // Return the data or handle it as needed
+    } catch (error) {
+        console.error("Error fetching OTP:", error);
+    }
+};

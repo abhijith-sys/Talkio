@@ -16,7 +16,8 @@ const Footer = () => {
                     <Link to={`/about`}>  <h4 className={styles.textColor}>ABOUT US</h4> </Link> <br />
                     <Link to={`/contact`}>  <h4 className={styles.textColor}>CONTACT</h4></Link><br />
                     <Link to={`/privacy`}>  <h4 className={styles.textColor}>PRIVACY POLICY</h4></Link><br />
-                    <Link to={`/terms`}>   <h4 className={styles.textColor}>TERMS & CONDITION</h4></Link>
+                    <Link to={`/terms`}>   <h4 className={styles.textColor}>TERMS & CONDITION</h4></Link><br />
+                    <Link to={`/guidelines`}>   <h4 className={styles.textColor}>COMMUNITY GUIDELINES</h4></Link>
                 </div>
                 <div className={styles.aboutLink}>
                     <h4>CONTACT US</h4><br />

@@ -59,7 +59,7 @@ const About = () => {
                     <li><strong>Expert Support</strong>: Connect with experienced counsellors for tailored emotional assistance.</li>
                     <li><strong>Convenience</strong>:Access consultations easily from home with a user-friendly app..</li>
                     <li><strong>Confidentiality</strong>:  Enjoy a safe and private space for open conversations..</li>
-                    <li><strong>nstant Access</strong>: Get quick support without long wait times..</li>
+                    <li><strong>instant Access</strong>: Get quick support without long wait times..</li>
                 </ul>
 
                 <h2 className={styles.textColor}>Join Us Today</h2>

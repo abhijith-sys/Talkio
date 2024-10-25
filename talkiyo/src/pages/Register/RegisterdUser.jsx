@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import styles from './RegistedUser.module.css'; // Assuming your styles will go here
 import NavBar from '../../components/NavBar/NavBar';
 import { useNavigate, useParams } from 'react-router-dom';
-import { getOtp, verifyOtpAndPhone } from '../../services/paymentService';
+import { getOtp, getPglist, verifyOtpAndPhone } from '../../services/paymentService';
 
 // Full page loader component
 const FullPageLoader = () => (
@@ -15,7 +15,8 @@ const RegisterdUser = () => {
     const { id } = useParams();
     const [mobileNumber, setMobileNumber] = useState('');
     const [loading, setLoading] = useState(false); // Track loading state
-    const [UserId, setUserId] = useState("")
+    const [UserId, setUserId] = useState("");
+    const [pgList, setpgList] = useState([])
 
     const initialilzeValues = () => {
         try {
@@ -34,8 +35,20 @@ const RegisterdUser = () => {
         }
     }
 
+
+    const setPgList =async ()=>{
+        try {
+            const response = await getPglist();
+            console.log(response);
+            setpgList()
+        } catch (error) {
+            console.log(error);
+            
+        }
+    }
     useEffect(() => {
-        initialilzeValues()
+        initialilzeValues();
+        setPgList();
 
     }, [])
 

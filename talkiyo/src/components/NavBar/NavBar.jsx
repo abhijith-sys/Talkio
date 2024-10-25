@@ -13,6 +13,7 @@ const NavBar = () => {
                 <Link to={`/contact`}> <h4 className={styles.heading}>CONTACT</h4></Link>
                 <Link to={`/privacy`}><h4 className={styles.heading}>PRIVACY POLICY</h4></Link>
                 <Link to={`/terms`}><h4 className={styles.heading}>TERMS & CONDITION</h4></Link>
+                <Link to={`/guidelines`}>   <h4 className={styles.heading}>COMMUNITY GUIDELINES</h4></Link>
                 <a className={styles.dwnldlink} href="https://shorturl.at/ydKUX"><div className={styles.downldBtn}> Download App</div></a>
             </div>
         </div>
