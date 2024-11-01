@@ -11,12 +11,13 @@ const FullPageLoader = () => (
     </div>
 );
 const RegisterdUser = () => {
-    const navigate= useNavigate()
+    const navigate = useNavigate()
     const { id } = useParams();
     const [mobileNumber, setMobileNumber] = useState('');
     const [loading, setLoading] = useState(false); // Track loading state
     const [UserId, setUserId] = useState("");
     const [pgList, setpgList] = useState([])
+    const [isModalOpen, setModalOpen] = useState(false);
 
     const initialilzeValues = () => {
         try {
@@ -36,14 +37,14 @@ const RegisterdUser = () => {
     }
 
 
-    const setPgList =async ()=>{
+    const setPgList = async () => {
         try {
             const response = await getPglist();
             console.log(response);
-            setpgList()
+            setpgList(response?.data)
         } catch (error) {
             console.log(error);
-            
+
         }
     }
     useEffect(() => {
@@ -56,26 +57,29 @@ const RegisterdUser = () => {
 
 
     // Function to verify OTP
-    const verifyOtp = async () => {
+    const verifyOtp = async (pG_Mode) => {
+        toggleModal();
         setLoading(true); // Start loading
         try {
-            const data = { otp: "", phoneNumber: "+91" + mobileNumber, planId: id,userId:UserId };
+            const data = { otp: "", phoneNumber: "+91" + mobileNumber, planId: id, userId: UserId ,handle_key:pG_Mode};
             const response = await verifyOtpAndPhone(data);
-            window.location.href = response?.data?.data?.instrumentResponse?.redirectInfo.url;
+       
+            window.location.href = response?.data;
         } catch (error) {
             console.log(error);
         }
         setLoading(false)
     };
+
     const handleLogout = () => {
         // Show a confirmation dialog
         const confirmLogout = window.confirm("Are you sure you want to log out?");
-    
+
         if (confirmLogout) {
             // Clear any stored user data (e.g., token, user details)
             localStorage.removeItem("phone");
             localStorage.removeItem("Uid");
-    
+
             // Redirect to login or home page after logout
             navigate("/plans"); // Adjust the path based on your app
         } else {
@@ -83,7 +87,10 @@ const RegisterdUser = () => {
             console.log("Logout cancelled");
         }
     };
-    
+
+    // Function to toggle the modal
+    const toggleModal = () => setModalOpen(!isModalOpen);
+
     return (
         <div className={styles.container}>
             <NavBar />
@@ -101,7 +108,7 @@ const RegisterdUser = () => {
                 />
 
                 <div>
-                    <button className={styles.payButton} onClick={verifyOtp} disabled={loading}>
+                    <button className={styles.payButton} onClick={ toggleModal} disabled={loading}>
                         Continue
                     </button>
                     <button className={styles.cancelButton} onClick={handleLogout} disabled={loading}>
@@ -109,6 +116,31 @@ const RegisterdUser = () => {
                     </button>
                 </div>
             </div>
+            {/* Modal */}
+            {isModalOpen && (
+                <div style={{
+                    position: 'fixed', top: '0', left: '0', right: '0', bottom: '0',
+                    backgroundColor: 'rgba(0, 0, 0, 0.5)', display: 'flex', justifyContent: 'center', alignItems: 'center'
+                }}>
+                    <div style={{
+                        backgroundColor: '#fff', padding: '20px', borderRadius: '8px', width: '300px', textAlign: 'center'
+                    }}>
+                        <h2>Select Payment Mode</h2>
+
+                        {/* List of payment modes */}
+                        {pgList.map((mode) => (
+                            <button
+                                key={mode.id}
+                                onClick={() => verifyOtp(mode?.handle_key)}
+                                style={{ display: 'block', width: '100%', padding: '10px', margin: '5px 0', cursor: 'pointer' }}
+                            >
+                                {mode?.name}
+                            </button>
+                        ))}
+
+                    </div>
+                </div>
+            )}
         </div>
     );
 }

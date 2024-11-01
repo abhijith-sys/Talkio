@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import styles from './PaymentPage.module.css'; // Assuming your styles will go here
 import NavBar from '../../components/NavBar/NavBar';
 import { useParams } from 'react-router-dom';
-import { getOtp, verifyOtpAndPhone } from '../../services/paymentService';
+import { getOtp, getPglist, verifyOtpAndPhone } from '../../services/paymentService';
 
 // Full page loader component
 const FullPageLoader = () => (
@@ -22,6 +22,9 @@ const PaymentPage = () => {
     const [timer, setTimer] = useState(30); // Timer for 30 seconds
     const [loading, setLoading] = useState(false); // Track loading state
     const [UserId, setUserId] = useState("")
+    const [pgList, setpgList] = useState([])
+    const [isModalOpen, setModalOpen] = useState(false);
+    const [selectedPaymentMode, setSelectedPaymentMode] = useState(null);
 
     const initialilzeValues = () => {
         try {
@@ -31,7 +34,7 @@ const PaymentPage = () => {
             if (number) {
                 setMobileNumber(number);
             }
-            if (Uid) {  
+            if (Uid) {
                 setUserId(Uid);
             }
         } catch (error) {
@@ -40,9 +43,20 @@ const PaymentPage = () => {
         }
     }
 
+    const setPgList = async () => {
+        try {
+            const response = await getPglist();
+            console.log(response);
+            setpgList(response?.data)
+        } catch (error) {
+            console.log(error);
+
+        }
+    }
+
     useEffect(() => {
         initialilzeValues()
-
+        setPgList();
     }, [])
 
 
@@ -76,6 +90,7 @@ const PaymentPage = () => {
 
     // Function to request OTP
     const requestOtp = async () => {
+       // Close the modal after selection
         if (validatePhoneNumber(mobileNumber)) {
             setMobileError('');
             setLoading(true); // Start loading
@@ -91,6 +106,7 @@ const PaymentPage = () => {
                 setOtpSent(true); // Show the OTP input field
                 setOtpError('');
                 startResendTimer(); // Start the resend timer
+                toggleModal();
             } catch (error) {
                 console.log(error);
                 setMobileError(error?.response?.data?.message);
@@ -106,16 +122,25 @@ const PaymentPage = () => {
     const verifyOtp = async () => {
         setLoading(true); // Start loading
         try {
-            const data = { otp: otp, phoneNumber: "+91" + mobileNumber, planId: id };
+            const data = { otp: otp, phoneNumber: "+91" + mobileNumber, planId: id ,handle_key:selectedPaymentMode};
             const response = await verifyOtpAndPhone(data);
-            console.log(response.data.data.instrumentResponse.redirectInfo.url);
+            console.log(response.data);
             setOtpVerified(true);
-            window.location.href = response.data.data.instrumentResponse.redirectInfo.url;
+            window.location.href = response?.data;
         } catch (error) {
             setOtpError(error?.response?.data?.message);
         } finally {
             setLoading(false); // Stop loading
         }
+    };
+
+
+    // Function to toggle the modal
+    const toggleModal = () => setModalOpen(!isModalOpen);
+    // Function to handle payment mode selection
+    const handleSelectPaymentMode = (mode) => {
+        setSelectedPaymentMode(mode);
+        toggleModal(); // Close the modal after selection
     };
 
     return (
@@ -168,6 +193,31 @@ const PaymentPage = () => {
                             </button>
                         )}
                     </>
+                )}
+                {/* Modal */}
+                {isModalOpen && (
+                    <div style={{
+                        position: 'fixed', top: '0', left: '0', right: '0', bottom: '0',
+                        backgroundColor: 'rgba(0, 0, 0, 0.5)', display: 'flex', justifyContent: 'center', alignItems: 'center'
+                    }}>
+                        <div style={{
+                            backgroundColor: '#fff', padding: '20px', borderRadius: '8px', width: '300px', textAlign: 'center'
+                        }}>
+                            <h2>Select Payment Mode</h2>
+
+                            {/* List of payment modes */}
+                            {pgList.map((mode) => (
+                                <button
+                                    key={mode.id}
+                                    onClick={() => handleSelectPaymentMode(mode?.handle_key)}
+                                    style={{ display: 'block', width: '100%', padding: '10px', margin: '5px 0', cursor: 'pointer' }}
+                                >
+                                    {mode?.name}
+                                </button>
+                            ))}
+
+                        </div>
+                    </div>
                 )}
             </div>
         </div>
